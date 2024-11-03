@@ -1,0 +1,11 @@
+<svg width="500" height="100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text {
+      font-family: 'Pacifico', cursive; /* Adjust this font-family to match if it's not exact */
+      font-size: 64px;
+      font-weight:bold;
+      fill: #3cd3e6; /* Adjust color if needed to match exactly */
+    }
+  </style>
+  <text x="10" y="60" class="text">Travel Story</text>
+</svg>
