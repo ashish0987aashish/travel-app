@@ -327,7 +327,7 @@ app.delete("/delete-story/:id",authenticateToken,async(req,res)=>{
 app.put("/update-is-favourite/:id",authenticateToken,async(req,res)=>{
 
 const{id}  = req.params;
-const{isFavourite} = req.user
+const{isFavourite} = req.body
 const{userId} = req.user
 
   try{
