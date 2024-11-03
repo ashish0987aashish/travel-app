@@ -3,6 +3,7 @@ import PasswordInput from '../../components/Input/PasswordInput'
 import {useNavigate} from 'react-router-dom'
 import { validateEmail } from '../../utils/helper'
 import  axiosInstance from '../../utils/axiosInstance'
+import './Login.css'
 
 
 
@@ -80,7 +81,7 @@ const Login = () => {
      <div className='login-ui-box bg-cyan-200 -bottom-40 right-1/2'/>
 
       <div className="container h-screen flex items-center justify-center px-20 my-auto">
-        <div className="w-2/4 h-[90vh] flex items-end bg-login-bg-img bg-cover bg-center rounded-lg p-10 z-50">
+        <div className="w-2/4 h-[90vh] flex items-end login-bagha bg-cover bg-center rounded-lg p-10 z-50">
           <div>
             <h4 className="text-5xl text-white font-semibold leading-[58px]">
              Capture Your <br/> Journeys 
