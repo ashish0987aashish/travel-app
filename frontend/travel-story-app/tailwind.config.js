@@ -16,12 +16,11 @@ export default {
       secondary:"#EF863E"
      },
      
-     backgroundImage:{
+   backgroundImage: {
+  'login-bg-img': "url('/assets/images/bg-image.png')",
+  'signup-bg-image': "url('/assets/images/signup-bg-img.png')",
+},
 
-     'login-bg-img':"url('./src/assets/images/bg-image.png')",
-     'signup-bg-image':"url('./src/assets/images/signup-bg-img.png')",
-     }
-      
     },
   },
   plugins: [],
