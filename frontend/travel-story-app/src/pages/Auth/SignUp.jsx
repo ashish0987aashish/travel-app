@@ -67,21 +67,21 @@ const SignUp = () => {
       <div className="login-ui-box  right-10 -top-40" />
       <div className="login-ui-box bg-cyan-200 -bottom-40 right-1/2" />
 
-      <div className="container h-screen flex items-center justify-center px-20 my-auto">
-        <div className="w-2/4 h-[90vh] flex items-end signup-bagha bg-cover bg-center rounded-lg p-10 z-50">
+      <div className="container h-screen flex flex-col lg:flex-row items-center justify-center px-4 lg:px-20 my-auto">
+        <div className="w-full lg:w-2/4 h-[40vh] lg:h-[90vh] flex items-end signup-bagha bg-cover bg-center rounded-lg p-6 lg:p-10 z-50">
           <div>
-            <h4 className="text-5xl text-white font-semibold leading-[58px]">
+            <h4 className="text-3xl lg:text-5xl text-white font-semibold leading-tight lg:leading-[58px]">
               Capture Your <br /> Journeys
             </h4>
-            <p className="text-xl text-white leading-6 pr-7 mt-4">
+            <p className="text-sm lg:text-xl text-white leading-5 lg:leading-6 pr-4 lg:pr-7 mt-2 lg:mt-4">
              Create an accoutne to start documenting your travels and preserving your memories in your travel journal.
             </p>
           </div>
         </div>
 
-        <div className="w-2/4 h-[75vh] bg-white rounded-r-lg relative p-16 shadow-cyan-200/20">
+        <div className="w-full lg:w-2/4 h-[45vh] lg:h-[75vh] bg-white rounded-lg lg:rounded-r-lg relative p-8 lg:p-16 shadow-cyan-200/20">
           <form onSubmit={handleSignUp} action="">
-            <h4 className="text-2xl font-semibold mb-7">SignUp</h4>
+            <h4 className="text-xl lg:text-2xl font-semibold mb-2 lg:mb-7">SignUp</h4>
 
             <input
               type="text"
@@ -116,7 +116,7 @@ const SignUp = () => {
               CREATE ACCOUNT
             </button>
 
-            <p className="text-xs text-slate-500 text-center my-4">Or</p>
+            <p className="text-xs text-slate-500 text-center my-2">Or</p>
 
             <button
               type="submit"
