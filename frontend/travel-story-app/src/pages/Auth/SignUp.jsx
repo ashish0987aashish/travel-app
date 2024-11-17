@@ -68,7 +68,7 @@ const SignUp = () => {
       <div className="login-ui-box bg-cyan-200 -bottom-40 right-1/2" />
 
       <div className="container h-screen flex flex-col lg:flex-row items-center justify-center px-4 lg:px-20 my-auto">
-        <div className="w-full lg:w-2/4 h-[40vh] lg:h-[90vh] flex items-end signup-bagha bg-cover bg-center rounded-lg p-6 lg:p-10 z-50">
+        <div className="w-full lg:w-2/4 h-[35vh] lg:h-[90vh] flex items-end signup-bagha bg-cover bg-center rounded-lg p-6 lg:p-10 z-50">
           <div>
             <h4 className="text-3xl lg:text-5xl text-white font-semibold leading-tight lg:leading-[58px]">
               Capture Your <br /> Journeys
@@ -79,7 +79,7 @@ const SignUp = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-2/4 h-[45vh] lg:h-[75vh] bg-white rounded-lg lg:rounded-r-lg relative p-8 lg:p-16 shadow-cyan-200/20">
+        <div className="w-full lg:w-2/4 h-[49vh] lg:h-[75vh] bg-white rounded-lg lg:rounded-r-lg relative p-6 lg:p-16 shadow-cyan-200/20">
           <form onSubmit={handleSignUp} action="">
             <h4 className="text-xl lg:text-2xl font-semibold mb-2 lg:mb-7">SignUp</h4>
 
