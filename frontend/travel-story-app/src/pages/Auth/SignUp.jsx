@@ -64,8 +64,8 @@ const SignUp = () => {
 
   return (
     <div className="h-screen bg-cyan-100 overflow-hidden relative">
-      <div className="login-ui-box  right-10 -top-40" />
-      <div className="login-ui-box bg-cyan-200 -bottom-40 right-1/2" />
+      <div className="login-ui-box  right-10 -top-40 hidden sm:block" />
+      <div className="login-ui-box bg-cyan-200 -bottom-40 right-1/2 hidden sm:block" />
 
       <div className="container h-screen flex flex-col lg:flex-row items-center justify-center px-4 lg:px-20 my-auto">
         <div className="w-full lg:w-2/4 h-[35vh] lg:h-[90vh] flex items-end signup-bagha bg-cover bg-center rounded-lg p-6 lg:p-10 z-50">
