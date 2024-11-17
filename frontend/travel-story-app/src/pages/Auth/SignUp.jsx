@@ -79,7 +79,7 @@ const SignUp = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-2/4 h-[49vh] lg:h-[75vh] bg-white rounded-lg lg:rounded-r-lg relative p-6 lg:p-16 shadow-cyan-200/20">
+        <div className="w-full lg:w-2/4 h-[56vh] lg:h-[75vh] bg-white rounded-lg lg:rounded-r-lg relative p-6 lg:p-16 shadow-cyan-200/20">
           <form onSubmit={handleSignUp} action="">
             <h4 className="text-xl lg:text-2xl font-semibold mb-2 lg:mb-7">SignUp</h4>
 
