@@ -262,7 +262,7 @@ const Home = () => {
               />
             )}
           </div>
-          <div className="w-[380px] lg:block">
+          <div className="w-[370px] lg:block">
             <div className="bg-white border border-slate-200 shadow-lg shadow-slate-200/60 hover:shadow-slate-500  rounded-lg mr-9">
               <div className="p-2">
                 <DayPicker
