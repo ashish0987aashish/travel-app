@@ -46,7 +46,7 @@ const Navbar = ({
             handleSearch={handleSearch}
             onClearSearch={onClearSearch}
           />
-          <div/> 
+          </div> 
 
           <button
             className="md:hidden mr-7 text-gray-600"  
