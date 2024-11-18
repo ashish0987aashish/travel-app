@@ -57,7 +57,7 @@ const Navbar = ({
             ) :
               <IoMdSearch size={34}/>
             }
-          <button/>  
+          </button>  
             
           <ProfileInfo userInfo={userInfo} onLogout={onLogout} />{" "}
         </>
