@@ -3,6 +3,7 @@ import LOGO from "../assets/images/logo.svg";
 import ProfileInfo from "./Cards/ProfileInfo";
 import { useNavigate } from "react-router-dom";
 import SearchBar from "./Input/SearchBar";
+import {IoMdSearch,IoMdClose} from "react-icons/io"
 
 const Navbar = ({
   userInfo,
@@ -13,7 +14,7 @@ const Navbar = ({
 }) => {
   const isToken = localStorage.getItem("token");
   const navigate = useNavigate();
-
+  const[isSearchVisible,setIsSearchVisible]= useState(false)
   const onLogout = () => {
     localStorage.clear();
     navigate("/login");
@@ -36,6 +37,7 @@ const Navbar = ({
 
       {isToken && (
         <>
+          <div className="hidden md:block flex-1 mx-4">
           <SearchBar
             value={searchQuery}
             onChange={({ target }) => {
@@ -44,9 +46,35 @@ const Navbar = ({
             handleSearch={handleSearch}
             onClearSearch={onClearSearch}
           />
+          <div/> 
+
+          <button
+            className="md:hidden mr-7 text-gray-600"  
+            onClick={()=> setIsSearchVisible(!isSearchVisible)}
+          >
+            {isSearchVisible ?  (
+             <IoMdClose size={34}/>
+            ) :
+              <IoMdSearch size={34}/>
+            }
+          <button/>  
+            
           <ProfileInfo userInfo={userInfo} onLogout={onLogout} />{" "}
         </>
       )}
+
+       { isSearchVisible && (
+          <div className="absolute top-14 left-0 right-0 bg-white p-4 shadow-md md:hidden z-20">
+          <SearchBar
+            value={searchQuery}
+            onChange={({ target }) => {
+              setSearchQuery(target.value);
+            }}
+            handleSearch={handleSearch}
+            onClearSearch={onClearSearch}
+          />
+        </div>
+       )}     
     </div>
   );
 };
