@@ -218,7 +218,7 @@ const Home = () => {
         handleClearSearch={handleClearSearch}
       />
 
-      <div className="container  mx-6 py-10 ">
+      <div className="container mx-auto px-4 py-6 ">
 
 
        <FilterInfoTitle 
@@ -234,10 +234,10 @@ const Home = () => {
 
 
 
-        <div className="flex gap-7">
+        <div className="flex flex-col-reverse lg:flex-row gap-6">
           <div className="flex-1">
             {allStories.length > 0 ? (
-              <div className="grid grid-cols-2 gap-7 ">
+              <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-2 gap-7 ">
                 {allStories.map((item) => {
                   return (
                     <TravelStoryCard
@@ -262,7 +262,7 @@ const Home = () => {
               />
             )}
           </div>
-          <div className="w-[370px]">
+          <div className="lg:w-[370px] lg:block">
             <div className="bg-white border border-slate-200 shadow-lg shadow-slate-200/60 hover:shadow-slate-500  rounded-lg mr-9">
               <div className="p-2">
                 <DayPicker
@@ -290,7 +290,7 @@ const Home = () => {
           },
         }}
         appElement={document.getElementById("root")}
-        className="modal-box scrollbar overflow-y-scroll"
+        className="modal-box outline-none scrollbar overflow-y-scroll w-full sm:w-3/4 lg:w-1/2"
       >
         <AddEditTravelStory
           type={openAddEditModal.type}
@@ -314,7 +314,7 @@ const Home = () => {
           },
         }}
         appElement={document.getElementById("root")}
-        className="modal-box outline-none scrollbar overflow-y-scroll w-1/2"
+        className="modal-box outline-none scrollbar overflow-y-scroll w-full sm:w-3/4 lg:w-1/2"
       >
         <ViewTravelStory
           storyInfo={openViewModal.data || null}
