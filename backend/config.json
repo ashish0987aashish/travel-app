@@ -1,6 +1,6 @@
 {
  
-    "connectionString": "mongodb+srv://ashish0987aashish:txmym9v76F@travelbook.zf9hf.mongodb.net/?appName=travelbook"
+    "connectionString": "mmongodb+srv://ashish0987aashish:txmym9v76F@travelbook.zf9hf.mongodb.net/?retryWrites=true&w=majority&appName=travelbook"
 
 }
 
